@@ -18,6 +18,13 @@ body {
   margin: 0 auto;
 }
 
+/* Tablet and Mobile Container Sizes */
+@media only screen and (max-width: 1024px){
+  .container {
+    width: 100%;
+  }
+}
+
 /* Header */
 header {
   width: 100%;
@@ -37,6 +44,7 @@ header .container {
   align-items: center;
   align-content: center;
 }
+
 
 /* Logo */
 
@@ -71,23 +79,82 @@ nav span {
   margin: 1rem 2rem 1rem 0;
 }
 
+#menu {
+  display: none;
+}
+
+
 /* Title Box */
 .title {
   margin-top: 10rem;
+  margin-right: 3rem;
   text-transform: uppercase;
   background-color: white;
   color: black;
   display: inline-block;
   float: right;
-  margin-right: 3rem;
+
 }
 
 .title h1 {
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.2;
   margin: 1.5rem 5rem;
   text-align: center;
 }
+
+/* Tablet and Mobile Header Elements Styling */
+
+@media only screen and (max-width: 1024px){
+  header {
+    height: 22rem;
+    padding-top: 0;
+    background-position: 25% 75%;
+  }
+
+  .title {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .title h1 {
+    font-size: 1.33rem;
+    margin: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  header {
+    height: 17rem;
+    background-position: 20% 80%;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    margin: 1rem 2rem 1rem 0;
+  }
+
+  .title {
+    width: 100%;
+    margin-top: 9rem;
+    margin-right: 0;
+  }
+
+  .title h1 {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+}
+
 
 /* Icons */
 
@@ -99,7 +166,7 @@ nav span {
 .icon-item{
   margin: 3rem 3rem;
   width: 5rem;
-  height: 8rem;
+  max-height: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,7 +180,31 @@ nav span {
 }
 
 .icon-item p {
+  padding-top: 1rem;
   text-align: center;
+}
+
+/*  Mobile Icon Elements Styling */
+
+@media only screen and (max-width: 470px){
+
+  .icons .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem 0;
+  }
+
+  .icon-item {
+    margin: 0;
+  }
+
+  .icon-item p {
+    font-size: 0.77rem;
+  }
+
+  #middle-icon {
+    padding: 1.54rem 0;
+  }
 }
 
 /* Business Items */
@@ -143,10 +234,45 @@ footer .container {
   background-color: azure;
   display: flex;
   align-items: center;
-  margin-top: 5rem; 
+  margin-top: 5rem;
 }
 
 footer img {
   height: 1.5rem;
   margin: 4rem 1rem 4rem 4rem;
+}
+
+/*  Mobile Business Info and Footer Elements Styling */
+
+@media only screen and (max-width: 470px){
+
+  .business .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .business-item {
+    width: 100%;
+  }
+
+  .business-item h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .business-item p {
+    margin: 0 1rem 4rem 1rem;
+    font-size: 0.77rem;
+  }
+
+  footer .container{
+    margin-top: 0;
+    justify-content: center; 
+  }
+
+  footer small {
+    display: none;
+  }
+
 }
