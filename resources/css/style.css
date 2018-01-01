@@ -30,7 +30,7 @@ header {
   width: 100%;
   height: 30rem;
   padding-top: 1rem;
-  background-image: url("../resources/images/glasses-bg.png");
+  background-image: url("../images/glasses-bg.png");
   background-size: cover;
   background-position: 40% 60%;
   color: white;
@@ -124,7 +124,7 @@ nav span {
   }
 }
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 560px){
   header {
     height: 17rem;
     background-position: 20% 80%;
@@ -186,7 +186,7 @@ nav span {
 
 /*  Mobile Icon Elements Styling */
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 560px){
 
   .icons .container {
     flex-direction: column;
@@ -244,7 +244,7 @@ footer img {
 
 /*  Mobile Business Info and Footer Elements Styling */
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 560px){
 
   .business .container {
     flex-direction: column;
@@ -268,7 +268,7 @@ footer img {
 
   footer .container{
     margin-top: 0;
-    justify-content: center; 
+    justify-content: center;
   }
 
   footer small {
